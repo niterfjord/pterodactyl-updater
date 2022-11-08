@@ -1,9 +1,8 @@
-#! /bin/bash
+#!/bin/bash
 
 cd=`date +'%Y-%m-%d'`
-fn=`echo $(basename $BASH_SOURCE) | cut -d "." -f 1`
-echo "===== ${fn^^} UPDATE ${cd} ====="
+echo "===== CERTBOT UPDATE ${cd} ====="
 
 systemctl stop nginx
-certbot renew --quiet
+certbot renew
 systemctl restart nginx

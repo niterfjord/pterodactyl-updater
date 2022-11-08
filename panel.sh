@@ -1,8 +1,7 @@
-#! /bin/bash
+#!/bin/bash
 
 cd=`date +'%Y-%m-%d'`
-fn=`echo $(basename $BASH_SOURCE) | cut -d "." -f 1`
-echo "===== ${fn^^} UPDATE ${cd} ====="
+echo "===== PANEL UPDATE ${cd} ====="
 
 cd /var/www/pterodactyl
 php artisan down

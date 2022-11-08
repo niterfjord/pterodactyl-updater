@@ -1,5 +1,9 @@
 #! /bin/bash
 
+cd=`date +'%Y-%m-%d'`
+fn=`echo $(basename $BASH_SOURCE) | cut -d "." -f 1`
+echo "===== ${fn^^} UPDATE ${cd} ====="
+
 cd /var/www/pterodactyl
 php artisan down
 curl -L https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz | tar -xzv

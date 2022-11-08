@@ -1,4 +1,5 @@
 #! /bin/bash
 
-certbot renew --quiet --deploy-hook
+systemctl stop nginx
+certbot renew --quiet
 systemctl restart nginx

@@ -2,6 +2,13 @@
 
 # COPYRIGHT @niterfjord @jobbedefeyter
 
+if ! [ -d "/var/log/niterfjord" ] ; then
+    mkdir /var/log/niterfjord
+fi
+if ! [ -d "/var/log/niterfjord/wings-updater" ] ; then
+    mkdir /var/log/niterfjord/wings-updater
+fi
+
 cd=`date +'%Y-%m-%d'`
 echo "===== WINGS UPDATE ${cd} ====="
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# COPYRIGHT @niterfjord @jobbedefeyter
+
 cd=`date +'%Y-%m-%d'`
 echo "===== PANEL UPDATE ${cd} ====="
 

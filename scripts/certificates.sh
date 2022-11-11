@@ -10,7 +10,7 @@ if ! [ -d "/var/log/niterfjord/certbot-renewer" ] ; then
 fi
 
 cd=`date +'%Y-%m-%d'`
-echo "===== CERTBOT UPDATE ${cd} ====="
+echo "===== CERTBOT RENEWER ${cd} ====="
 
 systemctl stop nginx
 certbot renew

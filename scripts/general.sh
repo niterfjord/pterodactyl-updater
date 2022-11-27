@@ -2,6 +2,9 @@
 
 # COPYRIGHT @niterfjord @jobbedefeyter
 
+if ! [ -d "/var/log/niterfjord" ] ; then
+    mkdir -p /var/log/niterfjord
+fi
 if ! [ -d "/var/log/niterfjord/panel-updater" ] ; then
     mkdir -p /var/log/niterfjord/panel-updater
 fi
